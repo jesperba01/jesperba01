@@ -1,0 +1,39 @@
+
+task 1 
+charakter_name = (" Jesper")
+day_week = (" wednesday")
+
+print(('good day') +charakter_name +('!') +day_week +(" is a perfect day to learn python") )
+
+
+task 2
+first_name = (" jesper")
+last_name = ("Barthelsson")
+
+print("greetings" + first_name + last_name +"what a plessnt supprise")
+
+
+task 3 
+a = 10
+b = 5.55
+
+x = a + b
+print(x)
+
+f = a / b
+print(f)
+
+g = a - b
+print(g)
+
+c = a * b
+print(c)
+
+d = a ** b
+print(d)
+
+t = a // b
+print(t)
+
+p = a % b
+print(p)
