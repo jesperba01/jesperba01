@@ -14,19 +14,19 @@ word_reveresed = input("input a word:")
 print(word_reveresed[::-1])
 
 # task 4
-options = input("input opperator")
+opperator = input("input opperator")
 firstNumber = int(input("input first number:"))
 secondNumber = int(input("input second number:"))
 
-if options == "+":
+if opperator == "+":
     result = firstNumber + secondNumber
     print("Answer: ", result)
-elif options == "-":
+elif opperator == "-":
     result = firstNumber - secondNumber
     print("Answer: ", result)
-elif options == "*":
+elif opperator == "*":
     result = firstNumber * secondNumber
     print("Answer: ", result)
-elif options == "/":
+elif opperator == "/":
     result = firstNumber / secondNumber
     print("Answer: ", result)
