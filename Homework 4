@@ -1,0 +1,32 @@
+# task 1
+input_numer = (input("name an number betwen 1 and 10:"))
+print(input_numer)
+print("wrong one",(input_numer))
+
+# task 2
+your_name = input("input your name:")
+print("hello ", your_name)
+your_age = int(input("how old are you?"))
+print("nice to meet you", your_name, "on your birthday you will be", your_age + 1)
+
+# task 3
+word_reveresed = input("input a word:")
+print(word_reveresed[::-1])
+
+# task 4
+options = input("input opperator")
+firstNumber = int(input("input first number:"))
+secondNumber = int(input("input second number:"))
+
+if options == "+":
+    result = firstNumber + secondNumber
+    print("Answer: ", result)
+elif options == "-":
+    result = firstNumber - secondNumber
+    print("Answer: ", result)
+elif options == "*":
+    result = firstNumber * secondNumber
+    print("Answer: ", result)
+elif options == "/":
+    result = firstNumber / secondNumber
+    print("Answer: ", result)
