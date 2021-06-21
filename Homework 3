@@ -1,0 +1,24 @@
+#task 1
+
+my_msg = 'hello world'
+print(my_msg[:2])
+print(my_msg[-2:])
+
+
+#task 2
+
+phone_number = '0987654321'
+
+if len(phone_number) == 10:
+    print("good")
+else:
+    print("try again")
+
+#task 3
+my_name = 'jesper'
+n = input("your name:")
+
+if n == my_name:
+    print("nice name")
+else:
+    print("change your name")
