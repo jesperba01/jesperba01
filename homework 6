@@ -1,25 +1,7 @@
-#attempt at task 1
-number_num = int(input("imput a number"))
+#task 1
+sentence = input("input me something:")
 
-convert_num = int(input("input convert"))
-
-def convert_to_num(number_num, base):
-    remainder_stack = []
-
-    while number_num > 0:
-        remainder = number_num % base
-        remainder_stack.append(remainder)
-        number_num = number_num // base
-
-    remainder_stack.reverse()
-    new_digits = []
-    for digit in remainder_stack:
-        new_digits.append([digit])
-
-    return ''.join(new_digits)
-
-print(convert_to_num(number_num, convert_num))
-
+print({item: sentence.count(item) for item in sentence.split('')[:-1]})
 
 #task 2
 #exampel
