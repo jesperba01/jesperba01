@@ -1,0 +1,51 @@
+#attempt at task 1
+number_num = int(input("imput a number"))
+
+convert_num = int(input("input convert"))
+
+def convert_to_num(number_num, base):
+    remainder_stack = []
+
+    while number_num > 0:
+        remainder = number_num % base
+        remainder_stack.append(remainder)
+        number_num = number_num // base
+
+    remainder_stack.reverse()
+    new_digits = []
+    for digit in remainder_stack:
+        new_digits.append([digit])
+
+    return ''.join(new_digits)
+
+print(convert_to_num(number_num, convert_num))
+
+
+#task 2
+#exampel
+
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+value = sum(prices[v] * stock[v] for v in prices)
+
+
+print(value)
+
+#task 3
+
+num_list = [2, 6, 23, 36, 45, 67, 77, 89, 92, 99]
+for i, j in enumerate(num_list):
+    num_list[i] = (i, j)
+
+print(num_list)
