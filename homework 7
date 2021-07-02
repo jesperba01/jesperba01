@@ -1,7 +1,7 @@
 #task 1
 
 def my_favorit_movie():
-    movie_favorit = "A Hitman Bodyguard"
+    movie_favorit = "A Hitman's Bodyguard"
     print("my favorit movie is " + movie_favorit)
 
 print(my_favorit_movie())
