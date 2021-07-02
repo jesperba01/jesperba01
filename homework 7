@@ -1,0 +1,40 @@
+#task 1
+
+def my_favorit_movie():
+    movie_favorit = "A Hitman Bodyguard"
+    print("my favorit movie is " + movie_favorit)
+
+print(my_favorit_movie())
+
+#task 2
+def make_country():
+    input("input youre country:")
+    input("input youre capital:")
+    {'name': 'country', 'capital': 'some_capital'}
+    
+
+print(make_country())
+
+
+
+#task 3
+
+def simple_calculator():
+    options = input("input opperator")
+    firstNumber = int(input("input first number:"))
+    secondNumber = int(input("input second number:"))
+
+    if options == "+":
+        result = firstNumber + secondNumber
+        print("Answer: ", result)
+    elif options == "-":
+        result = firstNumber - secondNumber
+        print("Answer: ", result)
+    elif options == "*":
+        result = firstNumber * secondNumber
+        print("Answer: ", result)
+    elif options == "/":
+        result = firstNumber / secondNumber
+        print("Answer: ", result)
+
+print(simple_calculator())        
