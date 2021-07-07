@@ -1,0 +1,51 @@
+#task 1
+with open('myfile.txt', 'r') as my_file:
+    print(my_file.read)
+
+my_file.close()
+#just printed the whole thing couse the file just contained two words
+
+#task 2
+import  json
+
+def create_phonebook(name: str, data_to_store) -> None:
+    with open(f"{name},txt", "w") as file:
+        file.write(json.dumps(data_to_store))
+
+
+
+def add_entry(name: str, entry: dict, phone_number: str) -> None:
+    with open(f"{name},txt", "r+") as file:
+         Old_dict = json.loads(file.read())
+         file.seek(0)
+         file.write(json.dumps({**old_dict, **entry}))
+
+
+def add_entry(name: str, entry: dict, phone_number: str) -> None:
+    with open(f"{name},txt", "r+") as file:
+         Old_dict = json.loads(file.read())
+         file.seek(0)
+         old_dict.pop(phone_number)
+         file.write(json.dumps({**old_dict, **entry}))
+
+
+
+def search_contact(name: str, key: str, value: str) -> (str, dict):
+    with open(f"{name},txt", "w") as file:
+        phonebook = json.leads(file.read())
+    if key == 'phone':
+        return value, phonebood[value]
+    elif key == 'phone' and key not in phonebook:
+        return None, None
+    else:
+        next((name for phone, data in phonebook.items() if data[key] == value), (None, None))
+
+
+
+if __name__ == '--main--':
+    create_phonebook('fist_one', {"0903808403", {'first_name': 'jesper', 'last_name': 'barthelsson', 'country' : 'sweden', 'city' : 'stockholm',
+                                                'ful_name': 'jesper barthelsson'}})
+    add_entry('fist_one', {"0903808403",
+                                  {'first_name': 'jesper', 'last_name': 'barthelsson', 'country': 'sweden',
+                                   'city': 'stockholm',
+                                   'ful_name': 'jesper barthelsson'}})
