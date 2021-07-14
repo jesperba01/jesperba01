@@ -1,0 +1,59 @@
+#task 1
+class Animals():
+
+    def Talk(self, Cat: str, Dog: str):
+        self.Cat = Cat
+        self.Dog = Dog
+
+Dog_talk = 'woof woof'
+Cat_talk = 'meow meow'
+
+class Cat():
+    print(Cat_talk)
+
+class Dog():
+    print(Dog_talk)
+
+
+#task 2
+
+class Library():
+    book_list = []
+
+
+    def book_list_count(self):
+        return len(self.book_list)
+
+class Book():
+    def __init__(self, name: str, Author: str):
+        self.name = name
+        self.author = Author
+
+class Author():     #this one is unnecessary couse u can just use the one above
+    pass
+
+library = Library()
+library.book_list.extend([Book('Dan Browns', 'The lost Symbol',)])
+print(library.book_list_count)
+
+#task 3
+class Fraction:
+
+    def __init__(self, number):
+     self.number = round(number, 3)
+
+    def __add__(self, other):
+        return Fraction(self.number + other.number)
+
+    def __eq__(self, other):
+        return self.number == other.number
+
+    def __str__(self):
+        return f"<Fraction ({self.number})>"
+
+
+x = Fraction(1/2)
+
+y = Fraction(1/4)
+
+print(x + y)
