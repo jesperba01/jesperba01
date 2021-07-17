@@ -1,0 +1,39 @@
+#task 1
+
+def detect_number():
+    x = 7
+    y = 3
+    å = 8
+print('detet numbers')
+
+print(detect_number.__code__.co_nlocals)
+
+#task 2
+
+
+
+
+
+
+#task 3
+def choose_func(nums: list, func1, func2):
+
+    pass
+
+
+list2 = [1, 2, 3, 4, 5]
+
+list1 = [1, -2, 3, -4, 5]
+
+num = 0
+
+
+while (num < len(list1)):
+
+    if list1[num] >= 0:
+        print(list1[num], end=" ")
+
+    if list2[num] >= 0:
+        print(list2[num], end=" ")
+
+    num += 1
