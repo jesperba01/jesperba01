@@ -1,0 +1,39 @@
+class IsEmptyError(Exception):
+    pass
+
+class singly_linked_stack:
+
+    class node:
+        def __init__(self, element, _next):
+            self.element = element
+            self._next = _next
+
+    def __init__(self):
+        self.head = none
+        self.size = 0
+
+    def __len__(self):
+        return self.size
+
+
+    def is_empty(self):
+        return self.size == 0
+
+
+    def push(self, element):
+        self.head = self.node(element, self.head)
+        self.size += 1
+
+    def pop(self):
+        if self.is_empty():
+            raise IsEmptyError('Erorr the stack is empty')
+
+        result = self.head.element
+        self.head = self.head._next
+        self.size -= 1
+        return result
+
+    def top(self):
+        if self.is_empty():
+            raise IsEmptyError('Error the stack is empty')
+        return self.head.element
